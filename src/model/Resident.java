@@ -1,8 +1,10 @@
-class Resident extends Person{
-    Resident(int id) {
+package model;
+
+public class Resident extends Person {
+    public Resident(int id) {
         super(id);
     }
-    BuildingManager buildingManager = new BuildingManager();
+    BuildingManager buildingManager = BuildingManager.getInstance();
     VisitorBook visitorBook = new VisitorBook();
     public void approve(Person re){
         System.out.println("visitor with id = "+ re.id + " approved");

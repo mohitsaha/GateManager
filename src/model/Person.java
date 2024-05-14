@@ -1,3 +1,5 @@
+package model;
+
 abstract public class Person {
     int id;
 
@@ -11,5 +13,11 @@ abstract public class Person {
             return id == resident.id;
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        //System.out.println("Hello");
+        return "Person with id " + id;
     }
 }
